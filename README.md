@@ -37,6 +37,7 @@ surface
 
 ### Je opdracht:
 https://www.mms.com/nl-nl/?gclid=Cj0KCQjw1dGJBhD4ARIsANb6OdmCtYNSfjUCOIP8pgUEAwvKmtAAqGvN1weWNoD917Q2JtxfqbPzWuAaAlGQEALw_wcB
+[kleinformaatM&M's.pdf](https://github.com/xmaximmee/Blok-web-/files/7184960/kleinformaatM.M.s.pdf)
 
 
 #### Screenshot(s) van de eerste pagina (small screen): 
