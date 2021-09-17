@@ -40,9 +40,9 @@ https://www.mms.com/nl-nl/?gclid=Cj0KCQjw1dGJBhD4ARIsANb6OdmCtYNSfjUCOIP8pgUEAwv
 
 
 #### Screenshot(s) van de eerste pagina (small screen): 
-hier de naam van de pagina  
+Home screen
 <img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
-
+?? afbeelding website? of ableeding eiegn website?
 #### Screenshot(s) van de tweede pagina (small screen):
 hier de naam van de pagina  
 <img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
