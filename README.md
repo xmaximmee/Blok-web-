@@ -59,13 +59,16 @@ hier de naam van de pagina
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### de hele pagina: 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+width="375px" a![breakdownschets1](https://user-images.githubusercontent.com/90137923/133769211-323c2848-a134-45a3-a1d5-d28446666308.jpg)
+lt="breakdown van de hele pagina">
 
 ### dynamisch deel (bijv menu): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+width="375px" alt="breakdown van een dynamisch deel">
+ik weet niet precies wat hier mee wordt bedoelt maar: ![Untitled](https://user-images.githubusercontent.com/90137923/133769316-44ece4ad-ba57-44f7-aafd-0b199b927bf0.jpg)
 
 ### wellicht nog een dynamisch deel (bijv filter): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+width="375px" alt="breakdown van nog een dynamisch deel">
+![Untitled](https://user-images.githubusercontent.com/90137923/133769368-d3070091-18bc-4eda-962d-af0921695c95.jpg)
 
 </details>
 
