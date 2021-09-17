@@ -22,7 +22,7 @@ Maxime de Lange
 blauw
 
 #### Je focus:
-responsive
+surface
  
 </details>
 
@@ -79,18 +79,26 @@ hier de naam van de pagina
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik vind dit een erg moeilijk vak. ik merkte dat ik veel dingen van vorig jaar vergeten was en dat ik bij veel onderdelen van mijn code veel hulp nodig had. 
+ 
+ Wat goed ging was de html en de content daar in plaatsen. Dit vond ik best leuk om te doen en ging ook wel goed omdat ik niet vaak vast liep.
+ In tegenstelling tot de CSS liep ik wel vaak vast, als het om de styling zoals lettertype, borders, tekst grootte, color etc ging, ging het
+ wel erg goed en dat vond ik ook erg leuk om te doen. Maar zodra het gaat over het positioneren/flexbox etc gaat het zeker niet zo goed. 
+ ik raak in de war wanneer ik welke manier ik moet gebruiken als ik bijvoorbeeld moet centreren. 
+ 
+ !!!! NOG TOEVOEGEN!!!!
+ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
 
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
+| Maxime         | student 2          | student 3    | student 4        |
 | ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
+| dit bespreken: | en dit             | en ik dit    | en dan ik dat    |
+| Ik zou graag   | dit als er tijd is | nog een punt | dit wil ik zeker |
+| centreren willen| ...                | ...          | ...              |
+  bespreken
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
