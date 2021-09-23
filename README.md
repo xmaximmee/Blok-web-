@@ -108,10 +108,9 @@ samen met je groepje opstellen
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Uit de meeting is gekomen dat ik goed opweg ben.
+- ik moet dingen vragen wanneer ik het niet snap
+- ik ben geholpen met het onderdeel 'maak het persoonlijk' van mijn website. ik heb geleerd te werken met counter en het positioneren van afbeeldingen
 
 </details>
 
@@ -125,19 +124,27 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+deze week had ik heel erg gevoel dat ik even het overzicht kwijt was met mijn wesbite.
+Ik was bezig met een onderdeel op mijn website en het lukte niet en mijn code voelde een beetje als een rotzooitje.
+ik had hulp gevrgaad aan Rowin en sinds hij mij een beetje had geholpen ging het gevoel weg. 
+In de offline les deze week heb ik goeie stappen gemaakt.
 
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
-
+| student 1     
+ Het bouwen van 
+ een header, icl hamburger menu en het positioneren van de elementen 
+ 
+| student 2
+ slideshow met automatische transitie
+ 
+| student 3
+vergtroten en verkleinen van images
+ 
+|overige studenten
+ dezelfde onderwerpen
+ 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
