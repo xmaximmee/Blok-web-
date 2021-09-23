@@ -52,25 +52,39 @@
     font-display: swap;
 }
 
-*{
+* {
     box-sizing: border-box;
 }
 
-/*custom property*/ 
+/*custom property*/
 
-:root{
+:root {
     --main-textcolor: #592411;
-    --grey-border-buttons: rgba(155,155,155,0.5);
+    --grey-border-buttons: rgba(155, 155, 155, 0.5);
+    --button-background: white;
+}
+
+body {
+    margin: 0;
 }
 
 /*algemene styling*/
-h1,h2,h3{
+h1,
+h2,
+h3 {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 600;
     color: var(--main-textcolor);
     text-transform: uppercase;
 }
 
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
 
 
 
@@ -78,47 +92,64 @@ h1,h2,h3{
 /********/
 /*HEADER*/
 /********/
-header{
+header {
     position: relative;
+}
+header ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul.navigatie{
+
+}
+
+ul.hamburger{
+    flex-direction: column;
 }
 
 /*MM logo*/
-header > a:first-of-type {
+header ul li>a:first-of-type {
     display: block;
     width: 5em;
     margin-left: auto;
     margin-right: auto;
 }
-header > a:first-of-type img{
+
+header ul li>a:first-of-type img {
     display: inline-block;
     width: 100%;
 }
 
 
 /*search icon*/
-header > a:nth-of-type(2){
+header ul li>a:nth-of-type(2) {
     border: solid red;
-    
+
 }
 
 
 
 /*winkelmandje*/
-header > a:nth-of-type(3){
+header ul li>a:nth-of-type(3) {
     border: solid red;
     display: inline-block;
-    
+
 }
 
 
-header > form{
+header>form {
     position: absolute;
-    right:50%;
-    top:0;
-}header > a:nth-of-type(2){
+    right: 50%;
+    top: 0;
+}
+
+header ul li>a:nth-of-type(2) {
     position: absolute;
     right: 0;
-    top:0;
+    top: 0;
 }
 
 
@@ -129,7 +160,7 @@ header > form{
 /***************/
 /*ONTWERP EIGEN*/
 /***************/
-section.ontwerp-eigen{
+section.ontwerp-eigen {
     background-color: red;
     height: 38em;
     display: flex;
@@ -140,17 +171,17 @@ section.ontwerp-eigen{
 }
 
 
-section.ontwerp-eigen h1{
+section.ontwerp-eigen h1 {
     font-size: 1.5em;
     padding: 1em;
     background-color: rgba(255, 255, 255, .5);
 }
 
-section.ontwerp-eigen a{
+section.ontwerp-eigen a {
     text-decoration: none;
 }
 
-section.ontwerp-eigen>a>p{
+section.ontwerp-eigen>a>p {
     background-color: white;
     padding: 1.2em 1em;
     display: inline;
@@ -176,11 +207,12 @@ section.ontwerp-eigen>a>p{
 /*******************/
 
 /*hele lijst met themas*/
-section.themas{
+section.themas {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 100%;
 }
 
 /*lijst*/
@@ -191,32 +223,30 @@ section.themas ul {
 }
 
 /*totale figuur*/
-section.themas figure { 
+section.themas figure {
     margin: 1;
     padding: 0;
-    } 
+}
 
 /*alle afbeedlingen in figure*/
-section.themas img{
+section.themas img {
     width: 100%;
 }
 
 /*captions*/
-figcaption{
-        text-align: center;
-        width: 100%;
+figcaption {
+    text-align: center;
+    width: 100%;
 }
 
 /*alle H's in captions*/
-figcaption>h2{
+figcaption>h3 {
     display: inline;
     background-color: white;
-   
     padding: 1em;
     position: relative;
-    box-shadow:calc(900em/100000 * 10) calc(900em/100000 * 10) calc(900em/100000 * 99) #0000001A;
+    box-shadow: calc(900em/100000 * 10) calc(900em/100000 * 10) calc(900em/100000 * 99) #0000001A;
 }
-
 
 
 
@@ -227,83 +257,113 @@ figcaption>h2{
 /**********************/
 /*MAAK HET PERSOONLIJK*/
 /**********************/
-section.persoonlijk{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-section.persoonlijk h2{
+section.persoonlijk {
     text-align: center;
-    margin-top: 2em;
 }
 
-section.persoonlijk ul{
+section.persoonlijk section {
+    display: flex;
+}
+
+section.persoonlijk section img {
+    height: 10%;
+    /*kom ik op terug*/
+    transform: scale(0.6);
+}
+
+section.persoonlijk h2 {
+    margin-bottom: 1em;
+    text-align: left;
+}
+
+/*het lijstje*/
+section.persoonlijk ol {
     list-style: none;
     margin: 0em;
-    padding: 0em; 
+    padding: 0em;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    counter-reset: persoonlijk;
+    /*teller zet je aan, begint bij 1*/
+}
+
+section.persoonlijk li a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+section.persoonlijk li a h3 {
+    counter-increment: persoonlijk;
+    /*bij elke h3 wordt er 1 bij op geteld*/
+    gap: 0.5em;
+
+    font-size: 1.5em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+section.persoonlijk li a h3::before {
+    content: counter(persoonlijk);
+    /*de waarde van de teller wordt er voor neer gezet*/
+    display: inline-flex;
+    background-color: var(--main-textcolor);
+    color: white;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    justify-content: center;
     align-items: center;
 }
 
-
-
-section.persoonlijk ul>li>a>p{
-    background-color:var(--main-textcolor);
-    
-    border-radius: 90%;
-    display: inline;
-    padding: 0.75em 1em;
-    
-    
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 600;
-    font-size: 1em;
-    color: white;
+section.persoonlijk img {
+    width: 40%;
 }
 
-section.persoonlijk img{
-    width: 60%;
-}
-
-
-
-section.persoonlijk ul+p{
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
+/*stukje tekst boven button*/
+section.persoonlijk p {
+    text-align: center;
+    max-width: 46.5%;
+    margin: 1em auto;
     color: var(--main-textcolor);
-
-    max-width: fit-content;
-
-    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 1em;
 }
 
-section.persoonlijk>a{
-    position: relative;
-    text-decoration: none;
-    text-align: center;
-    width: fit-content;
+/*button*/
 
-    padding: 0.5em 0.5em 0.5em 0.5em;
+section.persoonlijk>a {
+    align-items: center;
+
+    margin-top: 6em;
+    padding: .5em 0;
+
     border: 1px solid var(--grey-border-buttons);
     border-radius: 26px;
-
-    margin-top: 20px;
-
-    font-weight: 600;
-    font-family:'Roboto Condensed', sans-serif;
     background-color: #fff;
+
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Roboto Condensed', sans-serif;
     color: var(--main-textcolor);
     text-transform: uppercase;
-    font-size: 19px;
-    }
+    font-size: 15px;
+}
 
-    section.persoonlijk>a img{
-        width: 10%;
-        position: relative;
-        border: solid red;
+section.persoonlijk>a img {
+    width: 7%;
+    vertical-align: middle;
 
-    }
+}
+
+
+/************/
+/*Bedrijfsruimte*/
+/************/
