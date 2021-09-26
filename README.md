@@ -148,10 +148,9 @@ vergtroten en verkleinen van images
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- in deze meeting hebben we eigenlijk vooral de ruimte gekregen om vragen te stellen. Om mijn website pagina eigenlijk af te krijgen had ik vooral nog twee vraagjes.
+- ik heb geleerd hoe ik werk met een img background en een img daar over heen.
+- ik heb nog een keer herhaald hoe ik een beetje met de flexbox werk. ik heb herhaald hoe je dingen naast elkaar zet. 
 
 </details>
 
