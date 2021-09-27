@@ -62,10 +62,14 @@
     --main-textcolor: #592411;
     --grey-border-buttons: rgba(155, 155, 155, 0.5);
     --button-background: white;
+    --footer-textcolor:  #444;
+    --footer-color:#ffd200;
+    --hover-button-background: #8a381a;
 }
 
 body {
     margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 /*algemene styling*/
@@ -86,8 +90,15 @@ h3 {
     font-size: 1.5em;
 }
 
+h4{
+    color: var(--main-textcolor);
+    font-size: 1.25em;
+}
 
-
+h5{
+    --footer-textcolor:  #444;
+    font-size: 1em;
+}
 
 /********/
 /*HEADER*/
@@ -102,66 +113,37 @@ header ul{
     display: flex;
 }
 
-ul.navigatie{
-
+ul:first-of-type{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ul:first-of-type a{
+    padding: 0.5em;
 }
 
-ul.hamburger{
+ul:first-of-type img{
+    height: 1.5em;
+}
+
+ul:last-of-type{
     flex-direction: column;
+    display: none;
 }
 
-/*MM logo*/
-header ul li>a:first-of-type {
-    display: block;
-    width: 5em;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-header ul li>a:first-of-type img {
-    display: inline-block;
-    width: 100%;
-}
-
-
-/*search icon*/
-header ul li>a:nth-of-type(2) {
-    border: solid red;
-
-}
-
-
-
-/*winkelmandje*/
-header ul li>a:nth-of-type(3) {
-    border: solid red;
-    display: inline-block;
-
-}
-
-
-header>form {
-    position: absolute;
-    right: 50%;
-    top: 0;
-}
-
-header ul li>a:nth-of-type(2) {
-    position: absolute;
-    right: 0;
-    top: 0;
-}
 
 
 
 /*BODY*/
 
 
+
+
+
 /***************/
 /*ONTWERP EIGEN*/
 /***************/
 section.ontwerp-eigen {
-    background-color: red;
     height: 38em;
     display: flex;
     justify-content: center;
@@ -196,9 +178,19 @@ section.ontwerp-eigen>a>p {
 }
 
 
+/* styles */
 
+section.ontwerp-eigen>a>p:focus{
+    border: solid var(--main-textcolor);
+}
 
+section.ontwerp-eigen>a>p:hover{
+    text-decoration: underline var(--button-background);
+}
 
+section.ontwerp-eigen>a>p:active{
+    background-color: var(--main-textcolor);
+}
 
 
 
@@ -258,19 +250,21 @@ figcaption>h3 {
 /*MAAK HET PERSOONLIJK*/
 /**********************/
 section.persoonlijk {
-    text-align: center;
+    text-align: center; 
 }
-
-section.persoonlijk section {
+/* ??????? */
+section.persoonlijk section { 
     display: flex;
 }
 
+/* afbeelding naast titel */
 section.persoonlijk section img {
     height: 10%;
     /*kom ik op terug*/
     transform: scale(0.6);
 }
 
+/* titel */
 section.persoonlijk h2 {
     margin-bottom: 1em;
     text-align: left;
@@ -295,6 +289,7 @@ section.persoonlijk li a {
     text-decoration: none;
 }
 
+/* kopjes bij nummers */
 section.persoonlijk li a h3 {
     counter-increment: persoonlijk;
     /*bij elke h3 wordt er 1 bij op geteld*/
@@ -309,6 +304,7 @@ section.persoonlijk li a h3 {
     margin-top: 0;
 }
 
+/* nummers */
 section.persoonlijk li a h3::before {
     content: counter(persoonlijk);
     /*de waarde van de teller wordt er voor neer gezet*/
@@ -338,7 +334,6 @@ section.persoonlijk p {
 }
 
 /*button*/
-
 section.persoonlijk>a {
     align-items: center;
 
@@ -360,10 +355,182 @@ section.persoonlijk>a {
 section.persoonlijk>a img {
     width: 7%;
     vertical-align: middle;
-
 }
 
 
-/************/
+/* states */
+section.persoonlijk>a:focus{
+    border: solid 2.5px var(--main-textcolor);
+}
+
+section.persoonlijk>a:hover{
+    text-decoration: underline var(--button-background);
+}
+
+section.persoonlijk>a:active{
+    background-color: var(--main-textcolor);
+    color: var(--button-background)
+}
+
+
+
+
+
+
+
+
+/****************/
 /*Bedrijfsruimte*/
-/************/
+/****************/
+section.bedrijfsruimte{
+    background-image: url(../images/background-bedrijfsruimte.jpeg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5em 0;
+    background-size: cover;
+    background-position: center;
+}
+
+section.bedrijfsruimte img{
+    width: 70%;
+}
+
+section.bedrijfsruimte a{
+    background-color: var(--main-textcolor);
+    color: var( --button-background);
+    border-radius: 30px;
+    padding: 1em 3em;
+    width: fit-content;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 2em;
+}
+
+/****************/
+/*VERTROUWEN*/
+/****************/
+section.vertrouwen h2{
+    margin-left: .5em;
+    font-size: 2.25em;
+}
+
+
+
+/* FOOTER */
+
+
+
+
+
+
+
+/******************/
+/*img, form, titel*/
+/******************/
+
+footer{
+    background-color: var(--footer-color);
+    padding-bottom: 2em;
+}
+
+/* icoon + titel */
+footer img{
+    width: 10%;
+    border-radius: 50%;
+    background-color: var(--button-background);
+    
+    padding: 0.50em;
+    margin:0.25em;
+}
+
+footer section:first-of-type{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 2em;
+}
+
+footer section:nth-last-of-type(2) h4{
+    text-align: center;
+    margin-bottom: 0em ;
+}
+
+/* formulier */
+footer section:nth-last-of-type(2) form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: 1px solid var( --main-textcolor);
+    padding-bottom: 2em;
+    margin: 0em 1em;
+}
+
+footer section:nth-last-of-type(2) input{
+    border-radius: 30px;
+    background-color: var( --button-background); 
+    padding: 1em 0em;
+    border: none;
+    width: 100%;
+    margin-top: 1em;
+}
+
+footer section:nth-last-of-type(2) button{
+    border-radius: 50%;
+    background-color: var( --button-background);
+    padding: 1.5em ;
+    border: none;
+    margin-top: 1em;
+}
+
+/*********/
+/*Linkjes*/
+/*********/
+footer section:last-of-type{
+    margin:1em;
+}
+
+footer section:nth-last-of-type(2)+h4{
+    text-align: left;
+    padding-left: 1em;
+}
+
+footer section:last-of-type{
+   display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* PAGINA TWEE */
+
+
+
+/* BODY */
+
+/* linkje */
+main>a{
+    color: var(--main-textcolor);
+    margin: 1em;
+}
+
+main a p{
+    color: var(--main-textcolor);
+}
+
+main h1{
+    margin-left: 1em;
+}
