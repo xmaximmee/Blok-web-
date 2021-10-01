@@ -64,8 +64,22 @@
     --button-background: white;
     --footer-textcolor:  #444;
     --footer-color:#ffd200;
-    --hover-button-background: #8a381a;
+
+    --coockie-color: #68b631;
+    --coockie-background: #EFEFEF;
+    --link-visited:  #6a483b;
+
+    --producten-pagina: #f7f7f7;
+    
 }
+/*root {
+    --main-textcolor: white;
+    --grey-border-buttons: rgba(155, 155, 155, 0.5);
+    --button-background:  #592411;
+    --footer-textcolor:  rgb(240, 240, 240);
+    --footer-color:#ffd000b5;
+}
+*/
 
 body {
     margin: 0;
@@ -96,7 +110,7 @@ h4{
 }
 
 h5{
-    --footer-textcolor:  #444;
+    color: var(--footer-textcolor);
     font-size: 1em;
 }
 
@@ -113,26 +127,34 @@ header ul{
     display: flex;
 }
 
-ul:first-of-type{
+header ul:first-of-type{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-ul:first-of-type a{
+header ul:first-of-type a{
     padding: 0.5em;
 }
 
-ul:first-of-type img{
+header ul:first-of-type img{
     height: 1.5em;
 }
 
-ul:last-of-type{
+
+/* hamburger menu */
+
+header ul:last-of-type{
     flex-direction: column;
-    display: none;
 }
 
 
-
+header ul:last-of-type a{
+    font-family:  'Roboto Condensed', sans-serif;;
+    color: var(--main-textcolor);
+    font-size: 1.25em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
 
 /*BODY*/
 
@@ -150,6 +172,7 @@ section.ontwerp-eigen {
     align-items: center;
     text-align: center;
     background-image: url(../images/mms-f1.png);
+    background-size: cover;
 }
 
 
@@ -157,6 +180,7 @@ section.ontwerp-eigen h1 {
     font-size: 1.5em;
     padding: 1em;
     background-color: rgba(255, 255, 255, .5);
+    margin-bottom: 2em;
 }
 
 section.ontwerp-eigen a {
@@ -181,15 +205,16 @@ section.ontwerp-eigen>a>p {
 /* styles */
 
 section.ontwerp-eigen>a>p:focus{
-    border: solid var(--main-textcolor);
+    border: solid var(--footer-color);
 }
 
 section.ontwerp-eigen>a>p:hover{
-    text-decoration: underline var(--button-background);
+    text-decoration: underline var(--main-textcolor);
 }
 
 section.ontwerp-eigen>a>p:active{
     background-color: var(--main-textcolor);
+    color: var(--button-background);
 }
 
 
@@ -214,6 +239,11 @@ section.themas ul {
     margin: 0;
 }
 
+
+section.themas a{
+    text-decoration: none;
+}
+
 /*totale figuur*/
 section.themas figure {
     margin: 1;
@@ -226,13 +256,13 @@ section.themas img {
 }
 
 /*captions*/
-figcaption {
+section.themas figcaption {
     text-align: center;
     width: 100%;
 }
 
 /*alle H's in captions*/
-figcaption>h3 {
+section.themas figcaption>h3 {
     display: inline;
     background-color: white;
     padding: 1em;
@@ -364,7 +394,7 @@ section.persoonlijk>a:focus{
 }
 
 section.persoonlijk>a:hover{
-    text-decoration: underline var(--button-background);
+    text-decoration: underline var(--main-textcolor);
 }
 
 section.persoonlijk>a:active{
@@ -409,14 +439,47 @@ section.bedrijfsruimte a{
     margin-top: 2em;
 }
 
-/****************/
+
+/* states */
+section.bedrijfsruimte a:focus{
+    border:solid 2.5px var(--footer-color);  
+}
+
+section.bedrijfsruimte a:hover{
+    background-color: var(--button-background);
+    color: var(--main-textcolor);
+    border: solid 2px var(--main-textcolor);
+}
+
+section.bedrijfsruimte a:active{
+    border: solid 2.5px var(--main-textcolor);
+    background-color: var(--button-background);
+}
+
+
+
+
+
+
+/************/
 /*VERTROUWEN*/
-/****************/
+/************/
 section.vertrouwen h2{
     margin-left: .5em;
+    margin-top: 1.5em;
+    margin-bottom:0;
+    
     font-size: 2.25em;
 }
 
+section.vertrouwen a{
+    display: flex;
+    justify-content: center;
+}
+section.vertrouwen img{
+    width: 50%;
+    margin: 1em 1em 2em 1em;
+}
 
 
 /* FOOTER */
@@ -455,13 +518,13 @@ footer section:first-of-type{
     padding-top: 2em;
 }
 
-footer section:nth-last-of-type(2) h4{
+footer section:nth-of-type(2) h4{
     text-align: center;
     margin-bottom: 0em ;
 }
 
 /* formulier */
-footer section:nth-last-of-type(2) form{
+footer section:nth-of-type(2) form{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -472,7 +535,7 @@ footer section:nth-last-of-type(2) form{
     margin: 0em 1em;
 }
 
-footer section:nth-last-of-type(2) input{
+footer section:nth-of-type(2) input{
     border-radius: 30px;
     background-color: var( --button-background); 
     padding: 1em 0em;
@@ -481,7 +544,7 @@ footer section:nth-last-of-type(2) input{
     margin-top: 1em;
 }
 
-footer section:nth-last-of-type(2) button{
+footer section:nth-of-type(2) button{
     border-radius: 50%;
     background-color: var( --button-background);
     padding: 1.5em ;
@@ -489,21 +552,151 @@ footer section:nth-last-of-type(2) button{
     margin-top: 1em;
 }
 
-/*********/
-/*Linkjes*/
-/*********/
-footer section:last-of-type{
-    margin:1em;
-}
-
-footer section:nth-last-of-type(2)+h4{
+footer section:nth-of-type(2)+h4{
     text-align: left;
     padding-left: 1em;
 }
 
-footer section:last-of-type{
-   display: flex;
+/*********/
+/*Linkjes*/
+/*********/
+footer a{
+    color: var(--main-textcolor);
+    text-decoration: none;
 }
+
+
+footer section:nth-of-type(3), footer section:nth-of-type(4){
+    margin:1em;
+}
+
+footer section:nth-of-type(3)>ul{
+   display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer section:nth-of-type(3)>ul ul{
+    list-style: none;
+    margin: 0;
+    padding: 0 1em 0 0;
+}
+
+footer section:nth-of-type(3)>ul li{
+    flex: 1;  /*zorgt er voor dat ze de hele breedte van het scherm pakken*/
+}
+
+footer section:nth-of-type(3)>ul li:last-of-type ul{
+    padding: 0 0 0 1em;
+}
+
+footer section:nth-of-type(3)>ul li ul li{
+    margin-top: .75em;
+}
+
+footer section:nth-of-type(4){
+    padding-bottom: 2em;
+    border-bottom: 1px solid var( --main-textcolor);
+}
+
+footer section:nth-of-type(4) ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer section:nth-of-type(4) ul li{
+    margin-top: 0.75em;
+}
+
+
+
+
+
+/*laatste deel footer*/
+footer button{
+    background-color: var(--coockie-background);
+    border: solid 2px var(--coockie-color);
+    color: var(--coockie-color);
+    padding:1em;
+
+}
+
+footer section:last-of-type ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+footer section:last-of-type ul li a{
+    font-size: .8em;
+    padding: .5em;
+}
+
+
+/* styles */
+   
+    footer a:active{
+        text-decoration: underline var(--main-textcolor);
+    }
+
+    footer a:hover{
+        color: var(--button-background);
+        text-decoration: underline var(--button-background);
+    }
+
+    footer a:visited{
+        color:  var(--link-visited);
+    }
+
+    footer a:focus{
+        font-weight: 700;
+    }
+        
+
+    /* HOE KRIJG IK ALLEEN DE LAATSTE BUTTON??? */
+    footer button:active{
+        text-decoration: underline var(--coockie-color);
+    }
+
+    footer button:hover{
+        color: var(--button-background);
+        background: var(--coockie-color);
+    }
+
+    footer button:visited{
+        background-color: var(--coockie-background);
+    }
+
+    footer button:focus{
+        border: solid 4px var(--coockie-color);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -516,21 +709,42 @@ footer section:last-of-type{
 
 
 /* PAGINA TWEE */
+body{
+    background-color: var(--producten-pagina);
+}
+section.productenlijst ul{
+    display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 1em;
+   margin: 0;
+   padding: 1em ;
+   list-style: none;
+}
 
+section.productenlijst li{
+    background-color: var(--button-background);
+}
 
+section.productenlijst li a{
+    display: flex;
+    flex-direction: column;
+}
+
+section.productenlijst li h2{
+    font-size: 1em;
+    text-align: center;
+}
+
+section.productenlijst li img{
+    width: 100%;
+    order: -1; 
+    /* standaard is alles nummer order 0, door -1 wordt de img bovenaan gezet */
+}
+
+section.productenlijst li p{
+    text-align: center;
+}
 
 /* BODY */
 
 /* linkje */
-main>a{
-    color: var(--main-textcolor);
-    margin: 1em;
-}
-
-main a p{
-    color: var(--main-textcolor);
-}
-
-main h1{
-    margin-left: 1em;
-}
