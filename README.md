@@ -201,7 +201,15 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Deze week heb ik veel kleine 'foutjes' proberen op te lossen en ik heb alle states bij buttons/links toegevoged.
+ 
+ deze week zakte de moed een beetje in mijn schoenen. Ik had het gevoel dat het geheel van mijn website gewoon niet helemaal lekker klopte en toen ik op school kwam merkte ik dat het leek of andere website veel makkelijker waren. Aangezien mijn niveau, baalde ik want ik wil dit vak graag halen.
+In de les heb ik veel aan mijn website gezeten en ben ik weer een stuk verder gekomen. Hierdoor kreeg ik aan de eind van de les weer een beetje moed.
+ 
+ Op dit moment ben ik zo ver dat ik alleen nog: het hamburger menu moet fixen, 1 element op de eerste pagina, een dropdown menu op de 2e pagina en nog wat kleine slordigheids dingejtes. als ik deze dingen heb geregeld dan kan ik beginnen aan de surface plane opdracht
+ 
+ 
+ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
 
 ### Agenda voor meeting
@@ -209,9 +217,9 @@ samen met je groepje opstellen
 
 | student 1      | student 2          | student 3    | student 4        |
 | ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| het bespreken  | en dit             | en ik dit    | en dan ik dat    |
+| van een dropdo | dit als er tijd is | nog een punt | dit wil ik zeker |
+| wn menu..      | ...                | ...          | ...              |
 
 
 ### Verslag van meeting
