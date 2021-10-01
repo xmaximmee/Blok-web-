@@ -217,9 +217,10 @@ samen met je groepje opstellen
 
 | student 1      | student 2          | student 3    | student 4        |
 | ---            | ---                | ---          | ---              |
-| het bespreken  | en dit             | en ik dit    | en dan ik dat    |
+| sumbit button. 
+  (het bespreken  | en dit             | en ik dit    | en dan ik dat    |
 | van een dropdo | dit als er tijd is | nog een punt | dit wil ik zeker |
-| wn menu..      | ...                | ...          | ...              |
+| wn menu..)     | ...                | ...          | ...              |
 
 
 ### Verslag van meeting
