@@ -89,11 +89,21 @@ Ik vind dit een erg moeilijk vak. ik merkte dat ik veel dingen van vorig jaar ve
  Wat goed ging was de html en de content daar in plaatsen. Dit vond ik best leuk om te doen en ging ook wel goed omdat ik niet vaak vast liep.
  In tegenstelling tot de CSS liep ik wel vaak vast, als het om de styling zoals lettertype, borders, tekst grootte, color etc ging, ging het
  wel erg goed en dat vond ik ook erg leuk om te doen. Maar zodra het gaat over het positioneren/flexbox etc gaat het zeker niet zo goed. 
- ik raak in de war wanneer ik welke manier ik moet gebruiken als ik bijvoorbeeld moet centreren. 
+ ik raak in de war wanneer ik welke manier moet gebruiken als ik (bijvoorbeeld) iets moet centreren. 
+<img width="345" alt="Schermafbeelding 2021-10-05 om 16 03 22" src="https://user-images.githubusercontent.com/90137923/136038748-73739206-52eb-4b57-9b86-7e0091c9598e.png">
+hierboven is een voorbeeld te zien waar het centeren bijvoorbeeld erg goed ging.  
+dit was de html en de css.
+<img width="736" alt="Schermafbeelding 2021-10-05 om 16 04 03" src="https://user-images.githubusercontent.com/90137923/136038867-1098669a-65cf-487f-bcf5-be0f0752f86b.png">
+<img width="652" alt="Schermafbeelding 2021-10-05 om 16 04 45" src="https://user-images.githubusercontent.com/90137923/136039010-234e079c-ccd5-4d7d-853f-258d728f0f63.png">
  
- !!!! NOG TOEVOEGEN!!!!
- hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+ 
+ 
+ Bij dit gedeelte van mijn website vond ik het heel moeilijk om ene plan te bedenken hoe ik dit zo op deze manier ging neerzetten.
+ dit kwam doordat er 2 elementen (het getal en de H) naast elkaar moesten en 1 element moest er onder. 
+<img width="298" alt="Schermafbeelding 2021-10-05 om 16 05 14" src="https://user-images.githubusercontent.com/90137923/136039092-8ebfdff1-1810-4d36-9a5b-98bf0c27ab2b.png">
+ uiteindelijk heb ik met deze css: 
+<img width="280" alt="Schermafbeelding 2021-10-05 om 16 07 06" src="https://user-images.githubusercontent.com/90137923/136039427-e7c214ba-42b5-4a55-9645-1323eb7b45b9.png">
+gezorgd dat het nummer en de h, 1 element werden waardoor ik uiteindelijk gemakkelijk het nummer+de h en de img onder elkaar kreeg (met flex-direction: column)
 
 ### Agenda voor meeting
 samen met je groepje opstellen
