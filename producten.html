@@ -6,90 +6,110 @@
     <title>m&m's</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-    <body>  
+
+
+
+    <body class="productenhtml">  
         <header>
             <ul>
-                <li><a href="#"><img src="images/menu.svg" alt="hamburgermenu"></a></li>
+                <li><button><img src="images/menu.svg" alt="hamburgermenu"></button></li>
                 <li><a href="#"><img src="images/Schermafbeelding 2021-09-22 om 12.38.38.png" alt="reviews"></a></li>
-                <li><a href="#"><img src="images/MMs-Logo.png" alt="mmslogo"></a></li>
+                <li><a href="index.html"><img src="images/MMs-Logo.png" alt="mmslogo"></a></li>
                 <li><a href="#"><img src="images/vlagnl.gif" alt="vlagnl"></a></li>
                 <li><a href="#"><img src="images/searchicon.svg" alt="zoekicoon"></a></li>
                 <li><a href="#"><img src="images/shopping-bag.svg" alt="winkelmandje"></a></li>
             </ul>
-
-            <ul>
-                <li> <a href="#">onze producten</a></li>
-                <li> <a href="#">events en ideeën</a></li>
-                <li> <a href="#">ervaar m&m's</a></li>
-                <li> <a href="#">bedrijfsruimte</a></li>
-                <li> <a href="#">inloggen</a></li>
-            </ul>
+            
+            <nav>
+                <ul>
+                    <li><a href="#"><img src="images/customize-button-icon.svg">ontwerp uw eigen m&m's</a></li>
+                    <li> <a href="producten.html">onze producten</a></li>
+                    <li> <a href="#">events & ideeën</a></li>
+                    <li> <a href="#">ervaar M&M's</a></li>
+                    <li> <a href="#">bedrijfsruimte</a></li>
+                    <li> <a href="#">inloggen</a></li>
+                    <li><button><img src="images/telefoon.png" alt="telefoon icoon">0900 0400 693</button></li>
+                </ul>
+            </nav>
         </header>
 
-
         <main>
-            <a href="#">Home</a>
-            <p>/Onze producten</p>
-            <h1>Onze producten</h1>
 
-            <button>Dropdown</button>
+            <section class="titel-menu">
+
+                <h1>Onze producten</h1>
+                <p><a href="#">Home</a> /Onze producten</p>
+                
+            </section>
+
+                <form action="#">
+                    <select name="filter">
+                      <option value="uitgelicht">uitgelicht</option>
+                      <option value="prijs:van laag naar hoog">prijs:van laag naar hoog</option>
+                      <option value="prijs:van hoog naar laag">prijs:van hoog naar laag</option>
+                      <option value="nieuw">nieuw</option>
+                    </select>
+                  </form>
+
+           
+            
+           
+           
 
 
             <section class="productenlijst">
                 <ul>
                     <li>
-                        <a>
+                        <a href="#">
                             <h2> love you verpakking 400G</h2>
                              <img src="images/prod1.jpeg" alt="love you verpakking">
                              <p> €39,00 </p>
-
                         </a>
                     </li>
                     <li>
-                        <a>
+                        <a href="#">
                             <h2> love you verpakking 400G + twee premium mokken</h2>
                              <img src="images/pro2.jpeg" alt="love you verpakking + 2 premium mokken">
                              <p> €65,00 </p>
-
                         </a>
                     </li>
                     <li>
-                        <a>
+                        <a href="#">
                             <h2> love you verpakking 400G + m&m's XL brown-mok</h2>
                              <img src="images/pro3.jpeg" alt="love you verpakking + M&M’S XL BROWN-MOK">
                              <p> €52,00 </p>
                         </a>
                     </li>
                     <li>
-                        <a>
+                        <a href="#">
                             <h2> verassings&shy;verpakking 400G</h2>
                              <img src="images/pro4.jpeg" alt="verassingsverpakking 400G">
                              <p> €39,00 </p>
                         </a>
                     </li>
                     <li>
-                        <a>
+                        <a href="#">
                             <h2> verassings&shy;verpakking 400G + m&m's XL orange mok </h2>
                              <img src="images/pro5.jpeg" alt="pakket met blauw met gele mms">
                              <p> €52,00 </p>
                         </a>
                     </li>
                     <li>
-                        <a>
+                        <a href="#">
                             <h2> zak in bulk van 1.5 kg</h2>
                              <img src="images/pro6.jpeg" alt="grote zak mms van 1.5 kg">
                              <p> €79,00 </p>
                         </a>
                     </li>
                     <li>
-                        <a>
+                        <a href="#">
                             <h2> klassiek(e) zakje(s) 50G</h2>
                              <img src="images/pro7.jpeg" alt="zakje met wit en rode mms">
                              <p> €3,00 </p>
                         </a>
                     </li>
                     <li>
-                        <a>
+                        <a href="#">
                             <h2> 20 kleine zakken van 40G + 20 chique zilveren vogelkooitjes </h2>
                              <img src="images/pro7.jpeg" alt="vogelkooitje met zakje mms er in">
                              <p> €3,00 </p>
@@ -146,14 +166,27 @@
                 <section>
                     <h5>Over ons</h5>
                     <ul> 
-                        <li><a>Mijn account</a></li>
-                        <li><a>Veel gestelde vragen</a></li>
-                        <li><a>Verzending</a></li>
+                        <li><a href="#">Mijn account</a></li>
+                        <li><a href="#">Veel gestelde vragen</a></li>
+                        <li><a href="#">Verzending</a></li>
                     </ul>
                 </section>
-         
+
+                <section>
+                    <button>Coockie-instellingen</button>
+               
+                
+                    <ul> 
+                        <li><a href="#">privacy beleid</a></li>
+                        <li><a href="#">Juridisch</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">Bericht voor ouders</a></li>
+                    </ul>
+                </section>
     
         </footer>
+
+        <script src="js/javascript.js"></script>
     </body>
 
 </html>

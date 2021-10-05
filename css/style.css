@@ -52,45 +52,149 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'BenchNine';
+    src: url('../font/BenchNine-Regular.woff2') format('woff2'),
+        url('../font/BenchNine-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BenchNine';
+    src: url('../font/BenchNine-Bold.woff2') format('woff2'),
+        url('../font/BenchNine-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BenchNine';
+    src: url('../font/BenchNine-Light.woff2') format('woff2'),
+        url('../font/BenchNine-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
 * {
     box-sizing: border-box;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*custom property*/
 
 :root {
+    --header-backgroundcolor:#fff;
+
+    --titel-color:  #592411;
+    
     --main-textcolor: #592411;
+    --main-textcolor-light: #77331b;
     --grey-border-buttons: rgba(155, 155, 155, 0.5);
-    --button-background: white;
+    --button-background: #fff;
+
+    
+
+    --body-pagina:#fff;
+    --producten-pagina-lightest: #f7f7f7;
+    --prijs-color: #aeaeae;
+    --product-background:  white;
+    --product-textcolor: #592411;
+
+    --link-visited: #6a483b;
+
+    
+    --lighter-grey: #e1e1e1;
+    --darkest-grey:  #898989;
+    --BIG-titel-background: rgba(255, 255, 255, .5);
+    
+    --tel-button-textcolor: #898989; 
+
+    --border-nav: #e0e0e0;
+
     --footer-textcolor:  #444;
     --footer-color:#ffd200;
-
+    --coockie-textcolor:  #68b631;
     --coockie-color: #68b631;
     --coockie-background: #EFEFEF;
-    --link-visited:  #6a483b;
-
-    --producten-pagina: #f7f7f7;
-    
+    --input-color: #fff;
 }
-/*root {
+
+@media (prefers-color-scheme: dark){
+:root {
+
+    --titel-color: rgb(36, 36, 36);
     --main-textcolor: white;
-    --grey-border-buttons: rgba(155, 155, 155, 0.5);
-    --button-background:  #592411;
-    --footer-textcolor:  rgb(240, 240, 240);
-    --footer-color:#ffd000b5;
-}
-*/
 
-body {
+    --grey-border-buttons: rgba(155, 155, 155, 0.5);
+    --button-background:  #8f8f8f;
+
+
+    --header-backgroundcolor:#6f6f6f;
+    --body-pagina: #d3d3d3;
+    --prijs-color:rgb(36, 36, 36);
+    --product-background:  white;
+    --product-textcolor: #592411;
+    
+
+    --tel-button-textcolor: #d3d0d0; 
+    
+    --border-nav: #e0e0e0;
+    --producten-pagina-lightest: #9b9999;
+
+    --footer-textcolor:  rgb(240, 240, 240);
+    --footer-color:#cdaa10;
+    --coockie-background: #767676;
+    --coockie-textcolor:   #b6d3a0;
+    --coockie-color: #407819;
+    --input-color: rgb(187, 187, 187);
+}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
     margin: 0;
-    font-family: 'Roboto Condensed', sans-serif;
-}
+    font-family:  'BenchNine', sans-serif;
+    background-color: var(--body-pagina);
+} 
 
 /*algemene styling*/
 h1,
 h2,
 h3 {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family:  'BenchNine', sans-serif;
     font-weight: 600;
     color: var(--main-textcolor);
     text-transform: uppercase;
@@ -114,49 +218,210 @@ h5{
     font-size: 1em;
 }
 
+
+
+
+
+
+
+
+
 /********/
 /*HEADER*/
 /********/
 header {
     position: relative;
 }
+
 header ul{
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     display: flex;
+
+    margin: 0;
+    padding: .5em 1em;
 }
 
-header ul:first-of-type{
+header>ul:first-of-type{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-header ul:first-of-type a{
-    padding: 0.5em;
+    
+    background-color: var(--header-backgroundcolor); 
+    position: relative;
+    z-index: 1001; /*Een element met een hoger nuemmer staat altijd voor een element met een lagere nummer. */
 }
 
 header ul:first-of-type img{
     height: 1.5em;
 }
 
+/* hamburger menu button */
+header ul:first-of-type li:first-of-type{
+    cursor:pointer;
+}
 
-/* hamburger menu */
-
-header ul:last-of-type{
-    flex-direction: column;
+header ul:first-of-type li:first-of-type button{
+    background-color: var(--header-backgroundcolor);
+    border: none;
 }
 
 
-header ul:last-of-type a{
-    font-family:  'Roboto Condensed', sans-serif;;
+
+
+/* hamburger menu */
+header nav{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    
+    left:0;
+	top:0;
+    width: 100%;
+    transform:translateY(-100%); 
+    transition: .2s;
+    z-index: 1000;
+
+    background: var(--header-backgroundcolor);
+}
+
+header>nav ul{
+    flex-direction: column;
+    padding: 0em;
+}
+
+/* alle li */
+ header>nav ul li {
+    border-top: 2px solid var(--border-nav);
+    background-color: var(--header-backgroundcolor);
+    padding: 1.4em 0;
+    margin: 0;
+ }
+
+ /* alle a */
+ header nav ul a{ 
+    font-family:   'BenchNine', sans-serif;
     color: var(--main-textcolor);
     font-size: 1.25em;
     text-transform: uppercase;
     text-decoration: none;
+    font-weight: 600;
+    margin: 1em;
+ }  
+
+ header nav ul p{
+     text-align: right;
+ }
+
+ /* button 1 in menu */
+ header>nav ul li:first-of-type{
+    text-align: center;
+    margin-top: 3em;
+    background-color: var(--border-nav);
 }
 
+ header nav ul li:first-of-type a{
+    background-color:var(--button-background);
+    padding: .5em 0.2em;
+    display: inline;
+    
+    border-radius: 26px;
+    
+    font-family:  'BenchNine', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    color: var(--main-textcolor);
+    text-transform: uppercase;
+    border: 1px solid var(--grey-border-buttons);
+ }
+
+header nav ul li:first-of-type a img{
+    width: 7%;
+    vertical-align: middle;
+}
+
+
+ /* button 2 */
+ header nav ul li:last-of-type{
+    text-align: center;
+    background-color: var(--border-nav);
+    padding:1em;
+ }
+ 
+ header nav ul button{
+    padding: 0.5em 4em; 
+    display: inline;
+   
+    border: solid 1.6px var(--border-nav);
+    border-radius: 26px;
+    background-color: var(--button-background);
+    
+    color: var(--tel-button-textcolor);
+    font-family:  'BenchNine', sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    text-transform: uppercase;
+ }
+
+ header nav ul button img{
+    vertical-align: middle;
+ }
+ 
+
+/* stijl die wordt geactiveerd door icoon ivm js*/
+header nav.toonForm {
+	transform:translateY(0%);
+}
+
+
+/* states */
+
+header nav ul li a:hover{
+    text-decoration: underline;
+}
+header nav ul li a:active{
+    color: var(--main-textcolor-light);
+}
+header nav ul li a:focus{
+    border: solid 4px var(--footer-color);
+}
+
+
+header nav ul li:last-of-type button:hover{
+    text-decoration: 2px underline var(--grey-border-buttons);
+}
+
+header nav ul li:last-of-type button:active{
+    color: var(--footer-textcolor);
+}
+
+header nav ul li:last-of-type button:focus{
+    border: solid 4px var(--footer-textcolor);
+}
+
+
+
+
+header nav ul li:first-of-type>a:focus{
+    border: solid 4px var(--footer-color);
+}
+
+header nav ul li:first-of-type>a:hover{
+    text-decoration: underline var(--main-textcolor);
+}
+
+header nav ul li:first-of-type>a:active{
+    background-color: var(--main-textcolor);
+    color: var(--link-visited)
+}
+
+
+
 /*BODY*/
+
+
+
+
+
 
 
 
@@ -166,21 +431,27 @@ header ul:last-of-type a{
 /*ONTWERP EIGEN*/
 /***************/
 section.ontwerp-eigen {
-    height: 38em;
-    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+
+    height: 38em;
+    display: flex;
+
     background-image: url(../images/mms-f1.png);
     background-size: cover;
 }
 
 
 section.ontwerp-eigen h1 {
+    background-color: var(--BIG-titel-background);
+
     font-size: 1.5em;
-    padding: 1em;
-    background-color: rgba(255, 255, 255, .5);
+    color: var(--titel-color);
     margin-bottom: 2em;
+    font-weight: 700;
+
+    padding: 1em;
 }
 
 section.ontwerp-eigen a {
@@ -188,19 +459,25 @@ section.ontwerp-eigen a {
 }
 
 section.ontwerp-eigen>a>p {
-    background-color: white;
-    padding: 1.2em 1em;
     display: inline;
+
+    padding: 1.2em 1em;
 
     border-radius: 26px;
 
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 600;
+    background-color: var(--button-background);
+    font-family:  'BenchNine', sans-serif;
+    font-weight: bold;
     font-size: 1em;
     color: var(--main-textcolor);
     text-transform: uppercase;
 }
 
+section.ontwerp-eigen>a>p>img{
+    width: 10%;
+    vertical-align: middle;
+    padding: .1em;
+}
 
 /* styles */
 
@@ -219,6 +496,14 @@ section.ontwerp-eigen>a>p:active{
 
 
 
+
+
+
+
+
+
+
+
 /*******************/
 /*1E LIJST MET THEMAS*/
 /*******************/
@@ -227,7 +512,7 @@ section.ontwerp-eigen>a>p:active{
 section.themas {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* zorgt er voor dat ze naast elkaar komen als het mogelijk is maar anders niet */
     justify-content: center;
     align-items: center;
 }
@@ -239,6 +524,9 @@ section.themas ul {
     margin: 0;
 }
 
+section.themas ul li{
+    outline: none;
+}
 
 section.themas a{
     text-decoration: none;
@@ -264,11 +552,35 @@ section.themas figcaption {
 /*alle H's in captions*/
 section.themas figcaption>h3 {
     display: inline;
-    background-color: white;
+    background-color: var(--button-background);
     padding: 1em;
     position: relative;
     box-shadow: calc(900em/100000 * 10) calc(900em/100000 * 10) calc(900em/100000 * 99) #0000001A;
 }
+
+
+
+/* states */
+section.themas figcaption>h3:hover{
+    box-shadow: 7px 7px 5px var(--main-textcolor);
+    padding: 1.2em;
+}
+
+section.themas figcaption>h3:active{
+    text-decoration: underline;
+}
+
+section.themas figcaption>h3:focus{
+    border: solid 4px var(--footer-color);
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -282,15 +594,16 @@ section.themas figcaption>h3 {
 section.persoonlijk {
     text-align: center; 
 }
-/* ??????? */
+
+/* tiel en icoon naast elkaar zetten */
 section.persoonlijk section { 
     display: flex;
-}
+} 
 
 /* afbeelding naast titel */
 section.persoonlijk section img {
     height: 10%;
-    /*kom ik op terug*/
+    /*van Rowin/Yunus zou hijop terug komen, het lukte even niet anders*/
     transform: scale(0.6);
 }
 
@@ -312,6 +625,7 @@ section.persoonlijk ol {
     /*teller zet je aan, begint bij 1*/
 }
 
+/* a is de parent van de img en h die er in staat, a is het hele stuk */
 section.persoonlijk li a {
     display: flex;
     align-items: center;
@@ -340,7 +654,7 @@ section.persoonlijk li a h3::before {
     /*de waarde van de teller wordt er voor neer gezet*/
     display: inline-flex;
     background-color: var(--main-textcolor);
-    color: white;
+    color: var(--button-background);
     width: 2em;
     height: 2em;
     border-radius: 50%;
@@ -358,8 +672,8 @@ section.persoonlijk p {
     max-width: 46.5%;
     margin: 1em auto;
     color: var(--main-textcolor);
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 500;
+    font-family:  'BenchNine', sans-serif;
+    font-weight: 600;
     font-size: 1em;
 }
 
@@ -372,16 +686,17 @@ section.persoonlijk>a {
 
     border: 1px solid var(--grey-border-buttons);
     border-radius: 26px;
-    background-color: #fff;
+    background-color: var(--button-background);
 
     text-decoration: none;
     font-weight: 600;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family:  'BenchNine', sans-serif;
     color: var(--main-textcolor);
     text-transform: uppercase;
     font-size: 15px;
 }
 
+/* img in button */
 section.persoonlijk>a img {
     width: 7%;
     vertical-align: middle;
@@ -390,7 +705,7 @@ section.persoonlijk>a img {
 
 /* states */
 section.persoonlijk>a:focus{
-    border: solid 2.5px var(--main-textcolor);
+    border: solid 4px var(--footer-color);
 }
 
 section.persoonlijk>a:hover{
@@ -402,6 +717,197 @@ section.persoonlijk>a:active{
     color: var(--button-background)
 }
 
+section.persoonlijk h3:hover{
+    border-bottom: solid 2px var(--main-textcolor);
+}
+
+
+
+
+
+
+/***********/
+/*M&M LIJST*/
+/***********/
+
+/* lijst klein */
+section.mmLijst ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top:2.5em;
+}
+
+section.mmLijst ul:first-of-type{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: .5;
+}
+
+section.mmLijst ul:first-of-type img:first-of-type{
+    width: 80%;
+    margin:0;
+    padding:0;
+    opacity: .4;
+}
+section.mmLijst ul:first-of-type img:first-of-type:hover, section.mmLijst ul:first-of-type img:first-of-type:active{
+    opacity: 100%;
+}
+
+section.mmLijst ul:first-of-type li{
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+/* buttons in grote mm lijst */
+section.mmLijst ul:last-of-type li a{
+    padding: .5em 1em;
+    border-radius: 30px;
+    color: var( --product-background);
+    text-transform: uppercase;
+    font-size: 1em;
+    font-family:  'BenchNine', sans-serif;
+    font-weight: 600;
+    
+
+}
+section.mmLijst ul:last-of-type li:first-of-type a{
+    background-color: #E11931;
+}
+section.mmLijst ul:last-of-type li:nth-of-type(2) a{
+    background-color: #ffd200;
+}
+section.mmLijst ul:last-of-type li:nth-of-type(3) a{
+    background-color:#EE6403;
+}
+section.mmLijst ul:last-of-type li:nth-of-type(4) a{
+    background-color:#00A651;
+}
+section.mmLijst ul:last-of-type li:nth-of-type(5) a{
+    background-color:#552100;
+}
+section.mmLijst ul:last-of-type li:last-of-type a{
+    background-color:#0078C0;
+}
+
+
+
+
+/* lijst groot */
+section.mmLijst ul:last-of-type{
+    display: flex;
+    overflow:hidden;
+	
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+    overscroll-behavior: none;
+    margin: 0;
+    height: 400px;
+
+
+    scroll-snap-type: mandatory; /* Dat zorgt ervoor dat die altijd moet scroll snappen, dus ipv dat je bv voor de helft gescrolt ben in het element, zorgt dit ervoor dat het element altiid volledig in beeld scrollt  */
+}
+
+section.mmLijst ul:last-of-type li{
+    width:100%;
+	flex-shrink:0;
+    padding:1em;
+    position: relative;
+    scroll-snap-align: start;  /* Nu scrollt die  met een snap, waardoor de li altijd helemaal in beeld is  */
+
+}
+
+section.mmLijst ul:last-of-type li h3{
+    text-transform: uppercase;
+    padding: 0;
+    margin:0;
+    margin-top: 20%;
+    margin-left:5%;
+}
+
+section.mmLijst ul:last-of-type li a{
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1.5em;
+    margin-left: 5%;
+}
+
+section.mmLijst ul:last-of-type img:first-of-type {
+    height: 65%;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    top: 25%;
+}
+
+section.mmLijst ul:last-of-type img:last-of-type{
+    width: 100%;
+    position: absolute;
+    bottom:0;
+    left: 0;
+    right: 0;
+}
+
+/* titels in grote mmlijst */
+section.mmLijst ul:last-of-type li:first-of-type h3{
+    color: #E11931;
+    font-size: 6em;
+}
+section.mmLijst ul:last-of-type li:nth-of-type(2) h3{
+    font-size: 3.5em;
+    color:#ffd200;
+}
+section.mmLijst ul:last-of-type li:nth-of-type(3) h3{
+    color: #EE6403;
+    font-size: 3.5em;
+}
+section.mmLijst ul:last-of-type li:nth-of-type(4) h3{
+    color:#00A651;
+    font-size: 3.5em;
+}
+section.mmLijst ul:last-of-type li:nth-of-type(5) h3{
+    color: #552100;
+    font-size: 3em;
+}
+section.mmLijst ul:last-of-type li:last-of-type h3{
+    color: #0078C0;
+    font-size: 5em;
+}
+
+
+
+
+/* button states grote lijst*/
+section.mmLijst ul:last-of-type li a:hover{
+    text-decoration: underline;
+}
+
+section.mmLijst ul:last-of-type li a:focus{
+    border: solid 4px var(--footer-color);
+}
+/* states kleine mm lijst*/
+section.mmLijst ul:first-of-type li:first-of-type:hover, section.mmLijst ul:first-of-type li:first-of-type:active{
+    border-bottom: solid 10px #E11931;
+}
+section.mmLijst ul:first-of-type li:nth-of-type(2):hover{
+    border-bottom: solid 10px #ffd200;
+}
+section.mmLijst ul:first-of-type li:nth-of-type(3):hover{
+    border-bottom: solid 10px #EE6403;
+}
+section.mmLijst ul:first-of-type li:nth-of-type(4):hover{
+    border-bottom: solid 10px  #00A651;
+}
+section.mmLijst ul:first-of-type li:nth-of-type(5):hover{
+    border-bottom: solid 10px #552100;
+}
+section.mmLijst ul:first-of-type li:last-of-type:hover{
+    border-bottom: solid 10px #0078C0;
+}
 
 
 
@@ -423,10 +929,12 @@ section.bedrijfsruimte{
     background-position: center;
 }
 
+/* gele grootte M */
 section.bedrijfsruimte img{
     width: 70%;
 }
 
+/* bruine button */
 section.bedrijfsruimte a{
     background-color: var(--main-textcolor);
     color: var( --button-background);
@@ -442,20 +950,24 @@ section.bedrijfsruimte a{
 
 /* states */
 section.bedrijfsruimte a:focus{
-    border:solid 2.5px var(--footer-color);  
+    border:solid 4px var(--footer-color);  
 }
 
 section.bedrijfsruimte a:hover{
     background-color: var(--button-background);
-    color: var(--main-textcolor);
+    color: var(--button-background);
     border: solid 2px var(--main-textcolor);
 }
 
 section.bedrijfsruimte a:active{
     border: solid 2.5px var(--main-textcolor);
     background-color: var(--button-background);
+    color: var(--main-textcolor);
 }
 
+section.bedrijfsruimte a:visited{
+    background-color: var(--main-textcolor-light);
+}
 
 
 
@@ -472,27 +984,195 @@ section.vertrouwen h2{
     font-size: 2.25em;
 }
 
+/* a is waar de img in zit */
 section.vertrouwen a{
     display: flex;
     justify-content: center;
 }
+
+/* screenshot van trustpilot omdat het een formulier is van die website */
 section.vertrouwen img{
     width: 50%;
     margin: 1em 1em 2em 1em;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PAGINA TWEE */
+body.productenhtml{
+    background-color: var(--producten-pagina-lightest);
+}
+
+/* eerste sectie met titels en dropdown */
+section.titel-menu{
+display: flex;
+flex-direction: column;
+}
+
+/* "onze producten" */
+section.titel-menu h1{
+    margin: .5em 0em 0em .5em ;
+    z-index: 2em;
+    order: 3;
+    font-size: 3em;
+    color:var(--main-textcolor);
+}
+
+/* "home" */
+section.titel-menu a{
+    color: var(--main-textcolor);
+    font-family:  'Roboto Condensed', sans-serif;
+    font-size: 1em;
+    /* margin-left:1em; */
+    font-weight: 300;
+    order: 1;
+    margin-left: 1em;
+}
+/* "producten" */
+section.titel-menu p{
+    display: inline;
+    color: var(--main-textcolor);
+    font-family:  'Roboto Condensed', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    order: 2;
+    margin-top: 2em;
+}
+
+
+
+
+
+/* dropdown */
+body.productenhtml form{
+    padding: .5em 1em 2em 1em; 
+    border-bottom:1px solid var(--lighter-grey);
+}
+
+body.productenhtml select{
+    width: 100%;
+    padding: .5em;
+    border:solid 1.9px var(--lighter-grey);
+    border-radius: 30px;
+
+    text-transform: uppercase;
+    font-family:  'BenchNine', sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    color: var(--darkest-grey);
+}
+
+/* alle li's  */
+body.productenhtml ul li{
+    list-style: none;
+}
+
+
+
+/* producten lijst */
+section.productenlijst ul a{
+    text-decoration: none;
+    color: var(--prijs-color);
+    font-weight: 500;
+}
+
+section.productenlijst ul{
+    display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 1em;
+   margin: 0;
+   padding: 1em ;
+   list-style: none;
+}
+
+section.productenlijst li{
+    background-color: var(--product-background);
+}
+
+section.productenlijst li a{
+    display: flex;
+    flex-direction: column;
+}
+
+section.productenlijst li h2{
+    font-size: 1em;
+    text-align: center;
+    color: var(--product-textcolor);
+}
+
+section.productenlijst li img{
+    width: 100%;
+    order: -1; 
+    /* standaard is alles nummer order 0, door -1 wordt de img bovenaan gezet */
+}
+
+section.productenlijst li p{
+    text-align: center;
+    color: var(--prijs-color);
+    margin-top: 0;
+    font-family: 'BenchNine', sans-serif;
+    font-weight: bold;
+}
+
+
+/* states */
+section.productenlijst li:hover{
+    box-shadow: 0px 4px 7px 1px rgb(203 203 203 / 50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* FOOTER */
 
 
-
-
-
-
-
-/******************/
-/*img, form, titel*/
-/******************/
+/*************************/
+/*FOOTER:img, form, titel*/
+/*************************/
 
 footer{
     background-color: var(--footer-color);
@@ -509,6 +1189,7 @@ footer img{
     margin:0.25em;
 }
 
+/* de 2 icoontjes */
 footer section:first-of-type{
     display: flex;
     flex-direction: row;
@@ -518,6 +1199,7 @@ footer section:first-of-type{
     padding-top: 2em;
 }
 
+/* titel + invoer veld */
 footer section:nth-of-type(2) h4{
     text-align: center;
     margin-bottom: 0em ;
@@ -526,30 +1208,35 @@ footer section:nth-of-type(2) h4{
 /* formulier */
 footer section:nth-of-type(2) form{
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
-
+    gap: .25em;
     border-bottom: 1px solid var( --main-textcolor);
-    padding-bottom: 2em;
-    margin: 0em 1em;
+    padding-bottom: 4em;
+    margin: 1em 1em 0;
+    height: 3em;
+    align-items: stretch;
 }
 
 footer section:nth-of-type(2) input{
     border-radius: 30px;
-    background-color: var( --button-background); 
+    background-color: var(--input-color); 
     padding: 1em 0em;
     border: none;
     width: 100%;
-    margin-top: 1em;
+    height: 3em;
+    padding-left: 1em;
 }
 
+/* submit button */
 footer section:nth-of-type(2) button{
     border-radius: 50%;
-    background-color: var( --button-background);
-    padding: 1.5em ;
+    background-color: var(--button-background);
+    padding: 0;
     border: none;
-    margin-top: 1em;
+    margin: 0 auto;
+    width: 3em;
+    height: 3em;
+    color: var(--main-textcolor);
 }
 
 footer section:nth-of-type(2)+h4{
@@ -557,14 +1244,13 @@ footer section:nth-of-type(2)+h4{
     padding-left: 1em;
 }
 
-/*********/
+
+
 /*Linkjes*/
-/*********/
 footer a{
     color: var(--main-textcolor);
     text-decoration: none;
 }
-
 
 footer section:nth-of-type(3), footer section:nth-of-type(4){
     margin:1em;
@@ -596,6 +1282,7 @@ footer section:nth-of-type(3)>ul li ul li{
     margin-top: .75em;
 }
 
+/* rijtje "over ons" */
 footer section:nth-of-type(4){
     padding-bottom: 2em;
     border-bottom: 1px solid var( --main-textcolor);
@@ -616,12 +1303,19 @@ footer section:nth-of-type(4) ul li{
 
 
 /*laatste deel footer*/
-footer button{
+footer button:last-of-type{
     background-color: var(--coockie-background);
-    border: solid 2px var(--coockie-color);
-    color: var(--coockie-color);
-    padding:1em;
+    border: solid 1px var(--coockie-color);
+    color: var(--coockie-textcolor);
+    padding: 1em 1.6em;    
+    font-size: .7em;
+    font-family: 'BenchNine', sans-serif;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
 
+footer section:last-of-type{
+    text-align: center;
 }
 
 footer section:last-of-type ul{
@@ -640,7 +1334,7 @@ footer section:last-of-type ul li a{
 }
 
 
-/* styles */
+/* states */
    
     footer a:active{
         text-decoration: underline var(--main-textcolor);
@@ -660,7 +1354,7 @@ footer section:last-of-type ul li a{
     }
         
 
-    /* HOE KRIJG IK ALLEEN DE LAATSTE BUTTON??? */
+    /* states*/  
     footer button:active{
         text-decoration: underline var(--coockie-color);
     }
@@ -704,47 +1398,3 @@ footer section:last-of-type ul li a{
 
 
 
-
-
-
-
-/* PAGINA TWEE */
-body{
-    background-color: var(--producten-pagina);
-}
-section.productenlijst ul{
-    display: grid;
-   grid-template-columns: 1fr 1fr;
-   gap: 1em;
-   margin: 0;
-   padding: 1em ;
-   list-style: none;
-}
-
-section.productenlijst li{
-    background-color: var(--button-background);
-}
-
-section.productenlijst li a{
-    display: flex;
-    flex-direction: column;
-}
-
-section.productenlijst li h2{
-    font-size: 1em;
-    text-align: center;
-}
-
-section.productenlijst li img{
-    width: 100%;
-    order: -1; 
-    /* standaard is alles nummer order 0, door -1 wordt de img bovenaan gezet */
-}
-
-section.productenlijst li p{
-    text-align: center;
-}
-
-/* BODY */
-
-/* linkje */
