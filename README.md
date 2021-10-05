@@ -165,17 +165,31 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ### Bevindingen
 Lijst met je bevindingen die in de test naar voren kwamen:
+ - voice over vind engels moeilijk
+ - submit button met >, wordt uitgesproken als > niet als 'submit button'
 
-#### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### VOICE INTERFACE
+Header gaat goed, alt tekst klopt en het is duidelijk.
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+De voice over vind Nederlands moeilijk, dit wordt voorgelezen met een engels accent en als die het woord niet kent wordt de worden in het engels uitgesproken gespeld.
+Ondanks de tekst op de website onduidelijk wordt uitgesproken klopt de tekst wel en maakt de tekst duidelijk wat je ziet.
+
+De submit button bij het e-mailadres invoer veld wordt niet echt goed uitgesproken. Deze button bevat een > teken, dit wordt dan ook zo uitgesproken maar dit is niet handig voor de gebruiker. Dit moet ik nog aanpassen.
 
 
-#### Titel tweede bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### MUIS EN TOETSENBORD
+Als ik met het toetsenbord door de webstie ga gaat dit in de header weer goed. 
+Daarna springt die netjes over naar de volgende elementen maar wat opvalt is dat hij de hele section genaamd thema’s’ overslaat. Er zijn in die section 3 linkjes, die alle 3 worden overgeslagen.
+ik ben er achter gekomen dat de linkjes nog zo in mijn html stonden:
+<img width="390" alt="figure img src=imagesl" src="https://user-images.githubusercontent.com/90137923/136033889-c8f2d09e-6b91-4b16-a8c0-a64a19748dd8.png">
+Toen ik het veranderde naar dit ging het wel goed:
+ <img width="440" alt="Schermafbeelding 2021-10-05 om 15 38 36" src="https://user-images.githubusercontent.com/90137923/136034105-c5ae46c7-889b-409d-8892-1fed3052b6be.png">
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+ 
+De delen van de website daarna gingen wel goed. 
+Maar bij de footer worden weer alle linkjes overgeslagen en gaat die direct naar de button.
+Dit probleem het dezelfde oorzaak.
+
 
 
 #### Titel volgende bevinding. 
@@ -281,5 +295,7 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 1. https://codepen.io/shooft/pen/RwgGdvr
 2. https://codepen.io/shooft/pen/eYRdEPm
 3. https://codepen.io/roos-hva/pen/dyRQgbm
+4. https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme
+ 
 
 </details>
