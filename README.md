@@ -286,8 +286,9 @@ wat een opvallend puntje was was de darkmode toevoegen. Ten eerste waren de dark
 
 
 ### Screenshot(s)
+[fullpage-eigenwebsite1.pdf](https://github.com/xmaximmee/Blok-web-/files/7286683/fullpage-eigenwebsite1.pdf)
+![fullpage-eigenwebsite2](https://user-images.githubusercontent.com/90137923/136043441-1472af60-0a57-4889-b309-346d2a9ce263.png)
 
-hier screenshot(s) van je eindresultaat
 
 </details>
 
