@@ -45,9 +45,9 @@ Home screen
 [kleinformaatM&M's.pdf](https://github.com/xmaximmee/Blok-web-/files/7286552/kleinformaatM.M.s.pdf)
 
 #### Screenshot(s) van de tweede pagina (small screen):
-hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
- 
+Productenpagina
+![fullpage-eigenwebsite2](https://user-images.githubusercontent.com/90137923/136043837-91d7c855-a36f-446f-a84d-745917029004.png)
+
 </details>
 
 
@@ -133,9 +133,9 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
-deze week had ik heel erg gevoel dat ik even het overzicht kwijt was met mijn wesbite.
+Deze week had ik heel erg gevoel dat ik even het overzicht kwijt was met mijn wesbite.
 Ik was bezig met een onderdeel op mijn website en het lukte niet en mijn code voelde een beetje als een rotzooitje.
-ik had hulp gevraagd aan Rowin en sinds hij mij een beetje had geholpen ging het gevoel weg. 
+Ik had hulp gevraagd aan Rowin en sinds hij mij een beetje had geholpen ging het gevoel weg. 
 In de offline les deze week heb ik goede stappen gemaakt.
 
 ### Agenda voor meeting
