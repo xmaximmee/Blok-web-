@@ -218,18 +218,17 @@ samen met je groepje opstellen
 | student 1      | student 2          | student 3    | student 4        |
 | ---            | ---                | ---          | ---              |
 | sumbit button. 
-  (het bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| van een dropdo | dit als er tijd is | nog een punt | dit wil ik zeker |
-| wn menu..)     | ...                | ...          | ...              |
+  (het bespreken  | hoe maak ik een   | Hoe zet ik dit| en dan ik dat    |
+| van een dropdo | schuine oppacity.  | als een kolom | dit wil ik zeker |
+| wn menu..)     | streep.            | naast elkaar  | ...              |
 
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- eerst gingen we bij elke student af om te kijken hoe ver ze waren, daarbij konden we alvast onze vragens stellen.
+- Het viel mij op dat ik niet heel erg achter liep dan de rest van de studenten naar ik liep ook zeker niet voor.
+- Het viel mij ook op dat ik meer wist dan ik dacht. Als andere studenten een vraag stelde wist ik het regelmatig het antwoord.
 
 </details>
 
@@ -243,6 +242,23 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
+ 
+ een punt wat heel lastig was was de header balk. 
+ zo zag de balk er op de website uit: 
+ <img width="278" alt="Schermafbeelding 2021-10-04 om 11 24 57" src="https://user-images.githubusercontent.com/90137923/135826813-4e837e94-77e4-4815-9806-974345bfe2d1.png">
+en zo zag mijne er de heletijd uit: 
+ <img width="279" alt="Schermafbeelding 2021-10-04 om 11 25 24" src="https://user-images.githubusercontent.com/90137923/135826891-a310d6b5-356b-4352-aefb-d610aebbc0cd.png">
+
+ het menu op de echte website was van zichzelf niet zo goed opgebouwt. het was een beetje een rare header omdat er heel veel elementen in 'gepropt' waren. 
+ Daarbij vond ik het ook meoilijkj om de header elementen de juiste tags te gevem. Uiteindelijk ziet mijn html opbouw van de header er zo uit:
+ <img width="647" alt="Schermafbeelding 2021-10-04 om 11 26 52" src="https://user-images.githubusercontent.com/90137923/135827119-966d4330-c104-4ad0-806e-5063ffb88c09.png">
+zo zag de header er van de echte website uit:
+ <img width="641" alt="Schermafbeelding 2021-10-04 om 11 27 44" src="https://user-images.githubusercontent.com/90137923/135827220-168a22eb-6ec4-4222-88b4-6f45db07ad06.png">
+
+ wat wel erg goed ging was de producten pagina! met een heel kein beetje hulp maar zette ik dit zo in elkaar. het werkte en zag er goed het zelfde uit als de echte producten pagina. 
+ 
+ 
+ 
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
 ### Screenshot(s)
@@ -262,8 +278,8 @@ hier screenshot(s) van je eindresultaat
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
-3. ...
+1. https://codepen.io/shooft/pen/RwgGdvr
+2. https://codepen.io/shooft/pen/eYRdEPm
+3. https://codepen.io/roos-hva/pen/dyRQgbm
 
 </details>
