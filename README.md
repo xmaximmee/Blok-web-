@@ -135,15 +135,15 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ### Stand van zaken
 deze week had ik heel erg gevoel dat ik even het overzicht kwijt was met mijn wesbite.
 Ik was bezig met een onderdeel op mijn website en het lukte niet en mijn code voelde een beetje als een rotzooitje.
-ik had hulp gevrgaad aan Rowin en sinds hij mij een beetje had geholpen ging het gevoel weg. 
-In de offline les deze week heb ik goeie stappen gemaakt.
+ik had hulp gevraagd aan Rowin en sinds hij mij een beetje had geholpen ging het gevoel weg. 
+In de offline les deze week heb ik goede stappen gemaakt.
 
 ### Agenda voor meeting
 samen met je groepje opstellen
 
 | student 1     
  Het bouwen van 
- een header, icl hamburger menu en het positioneren van de elementen 
+ een header, icl. hamburger menu en het positioneren van de elementen 
  
 | student 2
  slideshow met automatische transitie
@@ -176,6 +176,7 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 Lijst met je bevindingen die in de test naar voren kwamen:
  - voice over vind engels moeilijk
  - submit button met >, wordt uitgesproken als > niet als 'submit button'
+ - let goed op of er bij elke <a> tag een href="#" staat. anders wordt dat element overgeslagen
 
 #### VOICE INTERFACE
 Header gaat goed, alt tekst klopt en het is duidelijk.
@@ -201,16 +202,9 @@ Dit probleem het dezelfde oorzaak.
 
 
 
-#### Titel volgende bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel nog een bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+#### USABILITY TEST 
+over deze test heb ik niet erg veel te zeggen. Vooral met de brillen waren er geen bijzondere bevindingenen was mijn website nog goed te lezen.
+met de schok apparaten viel mij wel op hoe erg veel moeilijk het eigenlijk wel niet kan zijn om dingen te doen. Wanneer ik de schokken niet te hard aan zette kon ik nog prima met mijn tab toets en de VIC door mijn website heen.
 
 </details>
 
@@ -226,13 +220,16 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 ### Stand van zaken
 Deze week heb ik veel kleine 'foutjes' proberen op te lossen en ik heb alle states bij buttons/links toegevoged.
  
- deze week zakte de moed een beetje in mijn schoenen. Ik had het gevoel dat het geheel van mijn website gewoon niet helemaal lekker klopte en toen ik op school kwam merkte ik dat het leek of andere website veel makkelijker waren. Aangezien mijn niveau, baalde ik want ik wil dit vak graag halen.
+Deze week zakte de moed een beetje in mijn schoenen. Ik had het gevoel dat het geheel van mijn website gewoon niet helemaal lekker klopte en toen ik op school kwam merkte ik dat het leek of andere website veel makkelijker waren. Aangezien mijn niveau, baalde ik want ik wil dit vak graag halen.
 In de les heb ik veel aan mijn website gezeten en ben ik weer een stuk verder gekomen. Hierdoor kreeg ik aan de eind van de les weer een beetje moed.
  
- Op dit moment ben ik zo ver dat ik alleen nog: het hamburger menu moet fixen, 1 element op de eerste pagina, een dropdown menu op de 2e pagina en nog wat kleine slordigheids dingejtes. als ik deze dingen heb geregeld dan kan ik beginnen aan de surface plane opdracht
+Op dit moment ben ik zo ver dat ik alleen nog: het hamburger menu moet laten werken, 1 element op de eerste pagina goed moet zetten, een dropdown menu op de 2e pagina moet toevoegen en nog wat kleine slordigheids dingetjes op moet lossen. Als ik deze dingen heb geregeld dan kan ik beginnen aan de surface plane opdracht.
  
  
- hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+wat goed ging was de keline animatie/micro interactie van het hamburger menu. Dit is de javascript:
+ <img width="830" alt="Schermafbeelding 2021-10-05 om 16 20 14" src="https://user-images.githubusercontent.com/90137923/136041689-066f3e05-e47c-47f8-84ee-67ba399bda99.png">
+ik had hier al de code uit de les ingezet voor het uitschuiven van het hamburger menu. In deze code kon ik ook de code voor het icoontje kwijt.
+met een klein beetje hulp van de studenten assistent en een mede student is dit gelukt maar ook best wel snel gelukt en begreep ik wat ik had gedaan. Dit had ik niet verwacht omdat ik niet zo goed ben in JS.
 
 
 ### Agenda voor meeting
@@ -272,17 +269,21 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 en zo zag mijne er de heletijd uit: 
  <img width="279" alt="Schermafbeelding 2021-10-04 om 11 25 24" src="https://user-images.githubusercontent.com/90137923/135826891-a310d6b5-356b-4352-aefb-d610aebbc0cd.png">
 
- het menu op de echte website was van zichzelf niet zo goed opgebouwt. het was een beetje een rare header omdat er heel veel elementen in 'gepropt' waren. 
+ het menu op de echte website was van zichzelf niet zo goed opgebouwt. Het was een beetje een rare header omdat er heel veel elementen in 'gepropt' waren. 
  Daarbij vond ik het ook meoilijkj om de header elementen de juiste tags te gevem. Uiteindelijk ziet mijn html opbouw van de header er zo uit:
  <img width="647" alt="Schermafbeelding 2021-10-04 om 11 26 52" src="https://user-images.githubusercontent.com/90137923/135827119-966d4330-c104-4ad0-806e-5063ffb88c09.png">
 zo zag de header er van de echte website uit:
  <img width="641" alt="Schermafbeelding 2021-10-04 om 11 27 44" src="https://user-images.githubusercontent.com/90137923/135827220-168a22eb-6ec4-4222-88b4-6f45db07ad06.png">
 
- wat wel erg goed ging was de producten pagina! met een heel kein beetje hulp maar zette ik dit zo in elkaar. het werkte en zag er goed het zelfde uit als de echte producten pagina. 
+wat wel erg goed ging was de producten pagina! met een heel kein beetje hulp maar zette ik dit zo in elkaar. het werkte en zag er goed het zelfde uit als de echte producten pagina. 
  
+wat een opvallend puntje was was de darkmode toevoegen. Ten eerste waren de darkmode kleuren aanmaken toch iets meer gedoe dan ik dacht.
+ ik merkte dat mijn website heel veel verschillende kleuren maar ook grijs tinten gebruikte. tijdens het maken van de website had ik deze kleuren niet heel handig/duidelijk in het lijstje benoemd waardoor ik een beetje in de war raakte.
  
+ wel vond ik het juist weer niet zo moeilijk om een andere kleur te zoeken voor de dark theme kleuren, dit ging goed op gevoel.
+ wat het opvallende was was dat maar met 1 code zin de darktheme kon worden aangeroepen door de instellingen van mijn computer. dit vond ik best vet.
  
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+
 
 ### Screenshot(s)
 
