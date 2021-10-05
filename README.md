@@ -42,9 +42,8 @@ https://www.mms.com/nl-nl/?gclid=Cj0KCQjw1dGJBhD4ARIsANb6OdmCtYNSfjUCOIP8pgUEAwv
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 Home screen
-[kleinformaatM&M's.pdf](https://github.com/xmaximmee/Blok-web-/files/7184951/kleinformaatM.M.s.pdf)
-alt="omschrijving van de pagina">
-?? afbeelding website? of ableeding eiegn website?
+[kleinformaatM&M's.pdf](https://github.com/xmaximmee/Blok-web-/files/7286552/kleinformaatM.M.s.pdf)
+
 #### Screenshot(s) van de tweede pagina (small screen):
 hier de naam van de pagina  
 <img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
